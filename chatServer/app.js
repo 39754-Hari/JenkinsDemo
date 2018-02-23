@@ -15,7 +15,7 @@ var server = app.listen(port,function(){
 });
 
 app.get("/",function(req, res){
-	res.end("chat server running...");
+	res.end("chat server up and running...");
 })
 
 app.post("/chatServer",function(req, res){
