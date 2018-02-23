@@ -4,8 +4,8 @@
   "description": "JenkinsDemo",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "stop": "forever stop app.js",
+    "start": "pm2 start app.js",
+    "stop": "pm2 stop app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/39781/JenkinsDemo#readme",
   "dependencies": {  
+	"pm2" : "^2.10.1",
     "actions-on-google": "^1.7.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
